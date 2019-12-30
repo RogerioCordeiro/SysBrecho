@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{313EED4E-CCE0-4ED1-8746-711206AF033B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SysBrecho.My.MyApplication</StartupObject>
+    <RootNamespace>SysBrecho</RootNamespace>
+    <AssemblyName>SysBrecho</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SysBrecho.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SysBrecho.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8-undefined-100-8.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoSysBrechoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoSysBrechoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoSysBrechoDataSet.vb">
+      <DependentUpon>BancoSysBrechoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMdiprincipal.vb" />
+    <Compile Include="FormFinalizarVenda.Designer.vb">
+      <DependentUpon>FormFinalizarVenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinalizarVenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProdutos.Designer.vb">
+      <DependentUpon>FrmProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastros.Designer.vb">
+      <DependentUpon>FrmCadastros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorios.Designer.vb">
+      <DependentUpon>FrmRelatorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVendas.Designer.vb">
+      <DependentUpon>FrmVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdRelatorios.vb" />
+    <Compile Include="ModuloCadastros.vb" />
+    <Compile Include="validacoes.vb" />
+    <Compile Include="mdiTelaPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiTelaPrincipal.Designer.vb">
+      <DependentUpon>mdiTelaPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormFinalizarVenda.resx">
+      <DependentUpon>FormFinalizarVenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProdutos.resx">
+      <DependentUpon>FrmProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastros.resx">
+      <DependentUpon>FrmCadastros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorios.resx">
+      <DependentUpon>FrmRelatorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVendas.resx">
+      <DependentUpon>FrmVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiTelaPrincipal.resx">
+      <DependentUpon>mdiTelaPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="BancoSysBrechoDataSet.xsc">
+      <DependentUpon>BancoSysBrechoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BancoSysBrechoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoSysBrechoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoSysBrechoDataSet.xss">
+      <DependentUpon>BancoSysBrechoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BancoSysBrecho.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons8-undefined-100-8.ico" />
+    <None Include="Resources\CarrinhoBtnFinalizando.png" />
+    <None Include="Resources\shopping-girl.jpg" />
+    <None Include="Resources\icons8-maquina-de-cartão-641.png" />
+    <None Include="Resources\icons8-finalizar-pedido-641.png" />
+    <None Include="Resources\icons8-caixa-registradora-antiga-641.png" />
+    <None Include="Resources\Compras_%28_mulher_com_sacolas_-_bem_colorido____%29.jpg" />
+    <None Include="Resources\icons8-maquina-de-cartão-64.png" />
+    <None Include="Resources\icons8-finalizar-pedido-64.png" />
+    <None Include="Resources\icons8-caixa-registradora-antiga-64.png" />
+    <None Include="Resources\saveas_1173.png" />
+    <None Include="Resources\Save_as-80_icon-icons.com_57275.png" />
+    <None Include="Resources\Private-80_icon-icons.com_57286.png" />
+    <None Include="Resources\LOGIN.png" />
+    <None Include="Resources\icons8-undefined-100-16.png" />
+    <None Include="Resources\icons8-undefined-100-15.png" />
+    <None Include="Resources\icons8-undefined-100-14.png" />
+    <None Include="Resources\icons8-undefined-100-13.png" />
+    <None Include="Resources\icons8-undefined-100-12.png" />
+    <None Include="Resources\icons8-undefined-100-11.png" />
+    <None Include="Resources\icons8-undefined-100-10.png" />
+    <None Include="Resources\icons8-undefined-100-9.png" />
+    <None Include="Resources\icons8-undefined-100-8.png" />
+    <None Include="Resources\icons8-undefined-100-7.png" />
+    <None Include="Resources\icons8-undefined-100-6.png" />
+    <None Include="Resources\icons8-undefined-100-5.png" />
+    <None Include="Resources\icons8-undefined-100-4.png" />
+    <None Include="Resources\icons8-undefined-100-3.png" />
+    <None Include="Resources\icons8-undefined-100-2.png" />
+    <None Include="Resources\icons8-undefined-100.png" />
+    <None Include="Resources\icons8-trabalho-500.png" />
+    <None Include="Resources\icons8-trabalho-100.png" />
+    <None Include="Resources\icons8-serviço-500.png" />
+    <None Include="Resources\icons8-serviço-100.png" />
+    <None Include="Resources\icons8-remover-500.png" />
+    <None Include="Resources\icons8-remover-100.png" />
+    <None Include="Resources\icons8-rabisco-100.png" />
+    <None Include="Resources\icons8-procurar-usuário-masculino-500.png" />
+    <None Include="Resources\icons8-procurar-usuário-masculino-100.png" />
+    <None Include="Resources\icons8-pontilhado-100.png" />
+    <None Include="Resources\icons8-pesquisa-propriedade-100.png" />
+    <None Include="Resources\icons8-pesquisa-paga-96.png" />
+    <None Include="Resources\icons8-performance-de-vendas-500.png" />
+    <None Include="Resources\icons8-performance-de-vendas-100.png" />
+    <None Include="Resources\icons8-pasta-500.png" />
+    <None Include="Resources\icons8-pasta-100.png" />
+    <None Include="Resources\icons8-office-s-100.png" />
+    <None Include="Resources\icons8-office-l-100.png" />
+    <None Include="Resources\icons8-office-100.png" />
+    <None Include="Resources\icons8-moedas-500.png" />
+    <None Include="Resources\icons8-moedas-100.png" />
+    <None Include="Resources\icons8-loja-500.png" />
+    <None Include="Resources\icons8-loja-100.png" />
+    <None Include="Resources\icons8-lock-128.png" />
+    <None Include="Resources\icons8-linha-gradiente-100.png" />
+    <None Include="Resources\icons8-kylie-jenner-100.png" />
+    <None Include="Resources\icons8-iu-azul-100.png" />
+    <None Include="Resources\icons8-ios-preenchido-100.png" />
+    <None Include="Resources\icons8-ios-100.png" />
+    <None Include="Resources\icons8-infográfico-100.png" />
+    <None Include="Resources\icons8-ideia-500.png" />
+    <None Include="Resources\icons8-ideia-100.png" />
+    <None Include="Resources\icons8-glifo-do-ios-100.png" />
+    <None Include="Resources\icons8-gerente-500.png" />
+    <None Include="Resources\icons8-gerente-100.png" />
+    <None Include="Resources\icons8-fornecedor-500.png" />
+    <None Include="Resources\icons8-fornecedor-100.png" />
+    <None Include="Resources\icons8-experimente-e-compre-100.png" />
+    <None Include="Resources\icons8-error-64.png" />
+    <None Include="Resources\icons8-empresária-500.png" />
+    <None Include="Resources\icons8-empresária-100.png" />
+    <None Include="Resources\icons8-empresa-de-pequena-porte-500.png" />
+    <None Include="Resources\icons8-empresa-de-pequena-porte-100.png" />
+    <None Include="Resources\icons8-editar-500.png" />
+    <None Include="Resources\icons8-editar-100.png" />
+    <None Include="Resources\icons8-desenvolvimento-de-habilidade-500.png" />
+    <None Include="Resources\icons8-desenvolvimento-de-habilidade-100.png" />
+    <None Include="Resources\icons8-desenho-colorido-à-mão-100.png" />
+    <None Include="Resources\icons8-crescimento-económico-500.png" />
+    <None Include="Resources\icons8-crescimento-económico-100.png" />
+    <None Include="Resources\icons8-cor-100.png" />
+    <None Include="Resources\icons8-contabilidade-500.png" />
+    <None Include="Resources\icons8-contabilidade-100.png" />
+    <None Include="Resources\icons8-chamada-em-conferência-500.png" />
+    <None Include="Resources\icons8-chamada-em-conferência-100.png" />
+    <None Include="Resources\icons8-adicionar-usuário-masculino-500.png" />
+    <None Include="Resources\icons8-adicionar-usuário-masculino-100.png" />
+    <None Include="Resources\icons8-abrir-pasta-500.png" />
+    <None Include="Resources\icons8-abrir-pasta-100.png" />
+    <None Include="Resources\iconeEditarClientes.png" />
+    <None Include="Resources\iconeAdcionar.png" />
+    <None Include="Resources\fornecedores-icone.png" />
+    <None Include="Resources\empresa.png" />
+    <None Include="Resources\delete_delete_exit_1577.png" />
+    <None Include="Resources\businessregistration_signpen_negocio_inscripcio_2358.png" />
+    <None Include="Resources\Botao.png" />
+    <None Include="Resources\3298594-asset-image-photo-picture_106999.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

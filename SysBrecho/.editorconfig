@@ -1,0 +1,19 @@
+﻿[*.vb]
+
+# BC42105: A função não retorna um valor em todos os caminhos de código
+dotnet_diagnostic.BC42105.severity = none
+
+# BC42104: A variável é usada antes de receber um valor
+dotnet_diagnostic.BC42104.severity = none
+
+# CA1031: Do not catch general exception types
+dotnet_diagnostic.CA1031.severity = none
+
+# IDE0067: Descartar objetos antes de perder o escopo
+dotnet_diagnostic.IDE0067.severity = suggestion
+
+# BC42025: Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
+dotnet_diagnostic.BC42025.severity = none
+
+# BC42031: 'O bloco 'Catch' nunca foi alcançado. O tipo de exceção foi manipulado acima na mesma instrução Try
+dotnet_diagnostic.BC42031.severity = none
